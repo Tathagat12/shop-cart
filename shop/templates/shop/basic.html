@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <title>{% block title%} {% endblock %}</title>
+     <style>
+      #b{
+        color:#00cc00;
+        line-height: 2em;
+      }
+      #g
+      {
+        color: #8585e0;
+      }
+      #y
+      {
+        color:#ff9900;
+      }
+      #o
+      {
+        color:#b30000;
+      }
+      #k
+        {
+          color:#ff1a1a;
+        }
+      #l
+        {
+          color:#9900e6;
+        }
+      #j
+       {
+         color:#ffcc00;
+       } 
+      .dem{
+        font-style: italic;
+        letter-spacing: 0.1em;
+       }
+       .mot{
+        color:white;
+      }
+      section{
+        background-color:black;
+      }
+      .tt
+      {
+        color:red;
+      }
+      
+      a{
+        color: white;
+
+      }
+      
+      
+       
+       
+      {% block css %} 
+       
+
+        {% endblock %}
+      </style>
+  </head>
+  <body>
+
+    <nav class="  navbar navbar-expand-lg fixed-top  navbar-dark bg-dark">
+  <a class="navbar-brand dem" href="/shop"><span id="b">C</span><span id="g">L</span><span id="y">A</span><span id="o">O</span><span id="k">S</span><span id="l">H</span><span id="j">O</span><span id="j">P</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/shop">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/shop/about">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/shop/tracker">Tracker</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/blog">Blog
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/shop/contact">Contact us
+        </a>
+      </li>
+    
+      
+      
+     
+    </ul>
+    <form method='get' action='/shop/search/' class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search" id="search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+   
+    <button type="button" class="btn btn-secondary mx-2" id="popcart" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="Vivamus
+    sagittis lacus vel augue laoreet rutrum faucibus.">
+    
+    
+    <i class="fa fa-shopping-cart" aria-hidden="true"></i>(<span id="cart">0</span>)
+    </button>
+  </div>
+</nav>
+
+  {% block body %} {% endblock %}
+  <section id="fh5co-footer" data-section="contact" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 to-animate">
+          <h3 class="section-title tt">About Us</h3>
+          <p class="mot">My Awesome Cart Pvt Ltd. is an Indian electronic commerce company based in Bengaluru, India. Founded by Sachin Bansal and Binny Bansal in 2007, the company initially focused on book sales, before expanding into other product categories such as  .[8] Flipkart also owns PhonePe, a mobile payments service based on the Unified Payments Interface (UPI). In August 2018, U.S.-based retail chain Walmart acquired a 77% controlling stake in Flipkart for US$16 billion, valuing it at $22 billion.</p>
+          <p class="copy-right mot">&copy; 2020 claoshop.com <br> All Rights Reserved.<br>
+            Designed by <a href="#"> claoshop.com</a></p>
+          
+        </div>
+        <div class="col-md-4 to animate">
+          <h3 class="section-title tt">Our Address</h3>
+          <ul class="contact-info">
+            <li class="mot"><i class="fa fa-map-marker mot"></i> 19 Block 21th Street,BBSR,Odisha 732107</li>
+            <li class="mot"><i class="fa fa-phone mot"></i> +91 8249374343</li>
+            <li class="mot" ><i class="fa fa-envelope mot"></i><a href="#"> info@claoshop.com</a></li>
+            <li class="mot"><i class="fa fa-globe mot"></i><a href="#"> www.claoshop.com</a></li>
+            
+          </ul>
+          <h3 class="section-title tt">Contact</h3>
+          <ul class="social-media">
+            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a></li>
+          </ul>
+          
+  
+          
+        </div>
+        <div class="col-md-4 to-animate">
+          <h3 class="section-title tt">Drop us a message</h3>
+          <form action="/shop/contact/" method="post">{% csrf_token %}
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" name='name' placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+              <label for="name">Email</label>
+              <input type="email" class="form-control" id="email" name='email' placeholder="Enter Your Email">
+            </div>
+          
+             
+          
+          
+             <div class="form-group">
+              <label for="desc">How May We Help You?</label>
+              <textarea class="form-control" id="desc" name='desc' rows="3"></textarea>
+            </div>
+                  <button type="submit" class="btn btn-danger">Submit</button>
+          </form>
+        </div>
+  
+        
+      </div>
+      
+    </div>
+  
+    
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+    </script>
+    {% block js %} {% endblock %}
+  </body>
+</html>
+
